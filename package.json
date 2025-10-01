@@ -1,0 +1,11 @@
+{
+  "name": "next-app-auth",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "next-app-auth": "cli.js"
+  },
+  "dependencies": {
+    "degit": "^2.8.4"
+  }
+}

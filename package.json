@@ -1,9 +1,9 @@
 {
-  "name": "next-app-auth",
+  "name": "next-app-auth-stater",
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "next-app-auth": "cli.js"
+    "next-app-auth-stater": "cli.js"
   },
   "dependencies": {
     "degit": "^2.8.4"

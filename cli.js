@@ -11,16 +11,20 @@ const targetDir = path.resolve(process.cwd(), projectName);
 
 console.log(`🚀 Creating Next.js boilerplate in: ${targetDir}`);
 
-const emitter = degit("techpulseltd/next-app-auth", {
+const emitter = degit("techpulseltd/next-app-auth-stater", {
   cache: false,
   force: true,
   verbose: true,
 });
 
+import { execSync } from "child_process";
+
 emitter.clone(targetDir).then(() => {
+  console.log("📦 Installing dependencies...");
+  execSync("npm install", { stdio: "inherit", cwd: targetDir });
+
   console.log("✅ Done!");
   console.log(`\nNext steps:`);
   console.log(`   cd ${projectName}`);
-  console.log("   npm install");
   console.log("   npm run dev");
 });
